@@ -1,0 +1,131 @@
+* {
+  color: white;
+  background-color: #0f172a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  /* border: 1px solid red; */
+  /* text-align: start; */
+  /* justify-content: start; */
+}
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+}
+
+.grid-container-2 .image-container {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+  border-radius: 10px;
+  background-color: #0f172a;
+  color: white;
+  /* text-align: center; */
+}
+.card:hover {
+  transform: scale(1.05);
+  border: 1px solid slateblue;
+}
+img {
+  border-radius: 5%;
+}
+
+ul li {
+  list-style: none;
+}
+
+.genres {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  overflow: hidden;
+  justify-content: center;
+}
+.genres-2 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-container-2 img {
+  height: 100%;
+}
+
+.genre-name {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: slategray;
+  padding: 5px;
+  border-radius: 10%;
+}
+.loading-icon {
+  color: teal;
+  font-size: 2rem;
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+.main {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  color: white;
+  padding: 8px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.arrow {
+  text-align: center;
+}
+
+input {
+  width: 50%;
+  border: 0.5px solid;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  border: 0.5px solid slateblue;
+  outline: 1px solid slateblue;
+}
+
+.main {
+  text-align: center;
+}
+.btn {
+  background-color: white;
+  color: black;
+  font-style: bold;
+}
+.btn:hover {
+  color: white;
+  background-color: black;
+}
